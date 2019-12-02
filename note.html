@@ -1,0 +1,9 @@
+<h2>Notes</h2>
+<ul>
+          &#123;% for note in notes.all %&#125;
+ 	<li>&#123; &#123; note.text &#125;&#125;</li>
+&#123;% endfor %&#125;</ul>
+<form method="POST" action="">&#123;% csrf_token %&#125;
+&#123; &#123; form.as_p &#125;&#125;
+<input type="submit">
+</form>
